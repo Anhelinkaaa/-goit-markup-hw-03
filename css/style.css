@@ -67,8 +67,7 @@ padding: 100px 0
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 40px;
-  
+  gap: 40;
 }
 .list {
     list-style: none;
@@ -97,7 +96,7 @@ align-items: center;
   gap:  40px;
 }
 .first-sec {
-  padding: 188px 0;
+  padding: 188px 0 188px
 }
 .contact-inf {
   font-family: 'Roboto';
@@ -146,6 +145,7 @@ align-items: center;
   border-radius: 4px;
   border: none;
   margin: 48px auto 188px auto;
+  cursor: pointer;
 }
 .main-btn:focus,
 .main-btn:hover {
@@ -222,6 +222,8 @@ background-color: #2e2f42;
   background-color: #F4F4FD;
   cursor: pointer;
   border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc
 }
 .flter-list {
   display: flex;
@@ -290,6 +292,7 @@ background-color: #2e2f42;
 
 .card-set-item {
   flex-basis: calc((100% - 24) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card-list {
@@ -340,9 +343,12 @@ background-color: #2e2f42;
   row-gap: 48px;
 }
 
+.card-portfolio {
+  width: calc((100% - 48px) / 3);
+}
+
 .portfolio-items {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
