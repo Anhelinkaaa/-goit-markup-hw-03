@@ -12,7 +12,9 @@ body {
   color:#434455;
   background-color: white;
 }
-
+.heder-style {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 h1,h2,h3 {
   margin: 0;
@@ -59,10 +61,7 @@ img {
   color:#f4f4fd;
 }
 .footer {
-margin-top: 100px;
-margin-right: 1020px;
-margin-bottom: 100px;
-margin-left: 156px;
+padding: 100px 0
 }
 
 .nav-list {
@@ -88,6 +87,8 @@ margin-left: 156px;
 
 .nav {
 margin-right: auto;
+display: flex;
+align-items: center;
 }
 
 .addres-list {
@@ -95,7 +96,9 @@ margin-right: auto;
   align-items: center;
   gap:  40px;
 }
-
+.first-sec {
+  padding: 188px 0;
+}
 .contact-inf {
   font-family: 'Roboto';
   font-style: normal;
@@ -114,7 +117,7 @@ margin-right: auto;
 /* --Main part: First section --- */
 
 .main-title {
-  width: 496px;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -137,10 +140,11 @@ margin-right: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  min-width:169;
-  min-height: 56px;
+  min-width: 169px;
+  height: 56px;
   padding: 15px 31px;
   border-radius: 4px;
+  border: none;
   margin: 48px auto 188px auto;
 }
 .main-btn:focus,
@@ -223,14 +227,16 @@ background-color: #2e2f42;
   display: flex;
   gap: 24px;
   justify-content: center;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-bottom: 72px
+
 }
 
-.filter:hover,
+.filter:hover{
+  border: 1px solid transparent
+}
 .filter:focus {
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(64, 75, 191, 1);
+  border: 1px solid transparent
 }
 
 .photo-acent{
@@ -246,7 +252,7 @@ background-color: #2e2f42;
   width: 1158px; ;
   outline: 2px solid red;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .heder-container {
@@ -293,13 +299,21 @@ background-color: #2e2f42;
 }
 .card-list-item {
   flex-basis: calc((100% - 24) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .image-of-hero {
   margin-bottom: 32px;
 }
 
 .name-of-hero {
-  margin-bottom: 32px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.hero-job {
+  text-align: center;
+}
+.work-position {
+  padding: 32px 16px;
 }
 
 .subtitle-about-work {
@@ -308,4 +322,27 @@ background-color: #2e2f42;
 }
 .text-about-work {
   margin-bottom: 32px;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.portfolio-section {
+  padding: 96px 0 120px;
+}
+
+.card-list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-items {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
