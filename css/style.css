@@ -64,10 +64,7 @@ img {
 padding: 100px 0
 }
 
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
+
 .list {
     list-style: none;
     display: flex;
@@ -352,4 +349,8 @@ background-color: #2e2f42;
 
 .first-sec {
   padding: 188px 0
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
 }
